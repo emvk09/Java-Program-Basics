@@ -23,8 +23,8 @@ public class Calculator
             case '/': ans= n1/ n2;
             break;
             default: System.out.println("Please enter a valid operator.");
-            System.exit(0);
+            return;
         }
-            System.out.format("The result is:\n %.2f %c %.2f = %.2f", n1, n2, op, ans);
+            System.out.format("The result is:\n %.2f %c %.2f = %.2f", n1, op, n2, ans);
     }
 }
