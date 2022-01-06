@@ -17,19 +17,21 @@ public class BinarySearch
 
         for(i= 0; i< n; i++)
         {
-            for(j= i+1; j< n; j++)
+            for(j= 0; j< n-i-1; j++)
             {
-                if ( num[i] >= num[j])
+                if ( num[j] >= num[j+ 1])
                 {
-                    temp= num[i];
-                    num[i]= num[j];
-                    num[j]= temp;
+                    temp= num[j];
+                    num[j]= num[j+ 1];
+                    num[j+ 1]= temp;
                 }
             }
         }
 
-        System.out.println("\nThe ordered array is now arranged with new index positions.");
-        System.out.println("Enter value to find from the array: ");
+        System.out.println("\nThe sorted array is:");
+        for(i= 0; i< n; i++)
+            System.out.print(num[i] + "\t");
+        System.out.println("\nEnter value to find from the array: ");
         search= sc.nextInt();
 
         first= 0;
