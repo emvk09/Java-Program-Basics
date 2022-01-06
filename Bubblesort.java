@@ -30,6 +30,6 @@ public class Bubblesort
 
         System.out.format("The bubblesorted array is: \n");
         for (i= 0; i< n; i++)
-        System.out.println(num[i]);
+            System.out.println(num[i]);
     }
 }  
