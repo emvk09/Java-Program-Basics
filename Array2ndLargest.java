@@ -17,13 +17,13 @@ public class Array2ndLargest
 
         for(i= 0; i< n; i++)
         {
-            for(j= i+1; j< n; j++)
+            for(j= 0; j< n-i-1; j++)
             {
-                if ( num[i] >= num[j])
+                if ( num[j] >= num[j+ 1])
                 {
-                    temp= num[i];
-                    num[i]= num[j];
-                    num[j]= temp;
+                    temp= num[j];
+                    num[j]= num[j+ 1];
+                    num[j+ 1]= temp;
                 }
             }
         }
@@ -31,5 +31,6 @@ public class Array2ndLargest
     // PRINTING 2nd ELLEMENT OF THE ARRRANGED ARRAY
 
         System.out.format("The 2nd smallest element is %d",  num[1]);
+        System.out.format("The 2nd largest element is %d",  num[n-2]);
     }
 }  
