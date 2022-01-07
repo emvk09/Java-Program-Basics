@@ -11,9 +11,9 @@ public class MatrixTranspose
         y= sc.nextInt();
         int num[][]= new int[x][y];
         
+        System.out.format("Enter the elements of the matrix:\n");
         for (i= 0; i< x; i++)
         {
-            System.out.format("Enter the elements in row %d of 1st matrix \n", i);
             for(j= 0; j< y; j++)
                 num[i][j]= sc.nextInt();
         }
