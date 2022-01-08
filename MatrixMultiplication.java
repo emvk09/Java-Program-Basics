@@ -45,7 +45,7 @@ public class MatrixMultiplication
             {
                 mul[i][j] = 0;
                 for(k= 0; k< p; k++)
-                    mul[i][j]= mul[i][j] + (mat1[i][k] * mat2[k][j]);
+                    mul[i][j] += (mat1[i][k] * mat2[k][j]);
             }
         }
 
