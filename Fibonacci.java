@@ -7,14 +7,20 @@ public class Fibonacci
         Scanner in= new Scanner (System.in);
         System.out.println("Enter the number of elements:");
         num= in.nextInt();
-        System.out.format("The first %d Fibonacci series are:\n", num);
-        System.out.println(ini +"\n"+ fin);
+        System.out.print("Fibonacci series : ");
+
+        if (num == 1)
+            System.out.print(ini);
+        else if (num != 0)
+            System.out.print(ini +" "+fin);
+
         for(i= 3; i<= num; i++)
         {
             ans= ini + fin;
-            System.out.println(ans);
+            System.out.print(" " + ans);
             ini= fin;
             fin= ans;
         }
+    
     }
 }
