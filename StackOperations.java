@@ -43,7 +43,7 @@ class Operations
             System.out.println("The stack is empty.\n");
 	    else
 	    {
-		    System.out.println("Stack: \n");
+		    System.out.println("Stack:");
 		    for(int i= top; i>= 0; i--)
                 System.out.format("%d\n", stack[i]);
 	    }
@@ -57,7 +57,7 @@ public class StackOperations
     {
         int option, size;
         Scanner sc= new Scanner (System.in);
-        System.out.println("Enter the maximum size of stack:");
+        System.out.println("\nEnter the maximum size of stack:");
         size= sc.nextInt();
 
         /* Here We are assigning the value of size variable to both the constructor ( Operation() )
