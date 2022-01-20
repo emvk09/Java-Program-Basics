@@ -12,6 +12,9 @@ public class PalindromeString
         ln= sentence.length();
         for (i= ln- 1; i >= 0; i--)
             reverse= reverse + sentence.charAt(i);
-        System.out.println("The reverse of string is "+ reverse);
+        if (sentence.equals(reverse))
+            System.out.println("The string is palindrome.");
+        else
+            System.out.println("The string is not palindrome.");
     }
 }
