@@ -4,7 +4,6 @@ public class RevStringBuffer
 {
     public static void main(String arr[])
     {
-        int ln, i;
         String sentence;
         Scanner sc= new Scanner (System.in);
         System.out.println("\nEnter the string:");
