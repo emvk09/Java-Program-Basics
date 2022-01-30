@@ -11,7 +11,8 @@ public class SumDigitsRecursion
         sum= fact_sum(num);
         System.out.println("The sum is " + sum);
     }
-
+    
+    // static variables and static methods in a class in java are just like the global variables and global functions in C
     static int fact_sum(int n)
     {
         if (n == 0)
