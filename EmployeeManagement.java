@@ -6,7 +6,6 @@ members 'specialization' and 'department' respectively. Now, assign a name, age,
 phone number, address, and salary to an officer and a manager by making an object 
 of both of these classes and print the same*/
 
-import java.util.*;
 public class EmployeeManagement
 {
    public static void main(String arr[])
