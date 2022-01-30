@@ -51,11 +51,11 @@ class Stack
 {
     Scanner sc= new Scanner(System.in);
     int Maxsize;
-    int top;
+    int top= -1;
     int arr[];
     Stack(int size)
     {
-        top= -1;
+//         top= -1;
         arr= new int[size];
 		// Maxsize= size;
     }
