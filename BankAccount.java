@@ -1,5 +1,3 @@
-import java.util.*;
-
 // If we want to call the constructor from the same class, then we use this keyword.
 // If we want to call the constructor from the parent class, then we use the super keyword.
 
