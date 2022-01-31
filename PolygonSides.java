@@ -8,6 +8,7 @@ Each one of the classes contains only the method numberOfSides( ) that shows the
 // In Abstract classes, we use only the declaration of methods, thus hiding the method implementation or the method defintion   
 // In real scenario, implementation is provided by unknown creater of the particular program 
 
+// Visible part
 abstract class Shape 
 {
     abstract void numberOfSides();
@@ -38,7 +39,7 @@ class Hexagon extends Shape
     }
 }
 
-// Visible or method calling part
+// Visible part
 public class PolygonSides 
 {
     public static void main(String args[]) 
