@@ -3,21 +3,21 @@ that extends Student class and implements a sports interface to display the tota
 classes and interfaces described below. Use appropriate access specifier as per the requirement. (*method, -variable) 
 Create a java program Hybrid.java that imports Result class from studpack and display the total for 5 students.*/
 
-// the package (Result.java), must be saved in a folder which should be present in the same directory of the java file
-// the package file name need not to be the package name defined in the package file
-// but the folder name must be same as that of the package name defined in the program file
-// here it is stored in the folder named studpack
+/*After saving the package as 'Result.java', compile the package by: 'javac -d . Result.java'
+This will create a new folder 'studpack' in the same directory.
+NB: while writing the import statment, never use * operator (import studpack.*). Instead mention the required class name.
+Now, as usual, compile and run the Hybrid.java file */
 
-import studpack.*;
+import studpack.Result;
 class Hybrid
 {
     public static void main(String arg[])
     {
-        Result st1 = new Result("Abhiram", 9, 86.75f, 69, 74);
-        Result st2 = new Result("Ajith", 07, 79, 90.5f, 78);
-        Result st3 = new Result("Emil", 33, 80, 90.5f, 89);
-        Result st4 = new Result("Dinoy", 21, 72.5f, 60, 98);
-        Result st5 = new Result("Jijo", 19, 90, 80.5f, 83.5f);
+        Result st1 = new Result("Gregory", 12, 86.75f, 69, 74);
+        Result st2 = new Result("emvk", 9, 79, 90.5f, 78);
+        Result st3 = new Result("Samuel", 36, 80, 90.5f, 89);
+        Result st4 = new Result("Hazel", 21, 72.5f, 60, 98);
+        Result st5 = new Result("Sarah", 19, 90, 80.5f, 83.5f);
         st1.displayTotal();
         st2.displayTotal();
         st3.displayTotal();
