@@ -11,10 +11,11 @@ public class ArrayListCollections
         arr.add("Banana");
         arr.add("Mango");
         System.out.println("Initial list:" + arr);
-        
+
         System.out.println("Returning the element with index 2: " + arr.get(2));
 
-        System.out.println("Changing the element with index 2: " + arr.set(2, "Pinapple"));
+        System.out.println("Changing the element of index 2 to Pineapple");
+        arr.set(2, "Pinapple");
 
         System.out.println("Printing the final list:");
         // for(String i: arr)
