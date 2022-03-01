@@ -10,17 +10,17 @@ public class ArrayListCollections
         arr.add("Grapes");
         arr.add("Banana");
         arr.add("Mango");
-
-        System.out.println("Initial list:");
-        for(String i: arr)
-            System.out.println(i);
-
+        System.out.println("Initial list:" + arr);
+        
         System.out.println("Returning the element with index 2: " + arr.get(2));
 
         System.out.println("Changing the element with index 2: " + arr.set(2, "Pinapple"));
 
         System.out.println("Printing the final list:");
-        for(String i: arr)
-            System.out.println(i);
+        // for(String i: arr)
+        //     System.out.println(i);
+        Iterator itr= arr.iterator();
+        while (itr.hasNext())
+            System.out.print(itr.next() + " ");
     }
 }
