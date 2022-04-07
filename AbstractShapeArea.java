@@ -1,4 +1,4 @@
-
+// the subclasses of an abstract class must either implement all the abstract methods or it should be declared abstract class
 abstract class Shape 
 {
     abstract void area(int x, int y);
